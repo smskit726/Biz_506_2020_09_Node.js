@@ -5,5 +5,6 @@ block content
   p 안녕하세요 오늘은 #{date} 입니다.
   p 지금시각은 #{time} 입니다.
 
-  input(type="text")
-  button 전송
+  form(method = "POST")
+    input(name= "u_name")
+    button 전송
