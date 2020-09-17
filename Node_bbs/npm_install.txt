@@ -13,4 +13,5 @@ yarn add express
 yarn add http-errors
 yarn add morgan
 yarn add pug
+yarn add mongoose
 yarn
