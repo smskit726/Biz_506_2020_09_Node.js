@@ -55,3 +55,7 @@ article.todo_list ul li {
   padding: 8px;
   border-bottom: 1px solid green;
 }
+
+article.todo_list ul li i:hover {
+  color: red;
+}
