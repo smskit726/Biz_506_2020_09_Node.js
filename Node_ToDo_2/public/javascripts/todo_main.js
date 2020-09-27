@@ -13,12 +13,23 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  document.querySelector("#btn-delete").addEventListener("click", function () {
-    let id = this.parentNode.getAttribute("data-id");
-    console.log(id);
+  // document
+  //   .querySelectorAll(".btn-delete")
+  //   .addEventListener("click", function () {
+  //     let id = this.parentNode.getAttribute("data-id");
+  //     console.log(id);
 
-    if (confirm("삭제하시겠습니까?")) {
-      document.location.replace("/delete/" + id);
-    }
-  });
+  //     if (confirm("삭제하시겠습니까?")) {
+  //       document.location.replace("/delete/" + id);
+  //     }
+  //   });
 });
+
+function del_click(obj) {
+  let id = obj.parentNode.getAttribute("data-id");
+  console.log(id);
+
+  if (confirm("삭제하시겠습니까?")) {
+    document.location.replace("/delete/" + id);
+  }
+}

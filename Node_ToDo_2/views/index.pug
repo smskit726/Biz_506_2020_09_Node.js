@@ -13,7 +13,7 @@ block content
       button(type="button", id="btn-save") 저장
 
     article.todo_list
-      ul#todo_list
+      ul
         each vo in todoList
           li(data-id=vo._id)= vo.t_text
-            i.fas.fa-trash-alt.fa-pull-right(id="btn-delete")
+            i.fas.fa-trash-alt.fa-pull-right(onclick="del_click(this)")
