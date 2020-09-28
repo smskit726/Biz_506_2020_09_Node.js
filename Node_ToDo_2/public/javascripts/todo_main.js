@@ -13,18 +13,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // document
-  //   .querySelectorAll(".btn-delete")
-  //   .addEventListener("click", function () {
-  //     let id = this.parentNode.getAttribute("data-id");
-  //     console.log(id);
-
-  //     if (confirm("삭제하시겠습니까?")) {
-  //       document.location.replace("/delete/" + id);
-  //     }
-  //   });
+  let delList = document.querySelectorAll(".btn-delete");
+  delList.forEach(function (del) {
+    del.addEventListener("click", function () {
+      let id = del.parentNode.getAttribute("data-id");
+      if (confirm("삭제하시겠습니까")) {
+        document.location.replace("/delete/" + id);
+      }
+    });
+  });
 });
 
+/*
 function del_click(obj) {
   let id = obj.parentNode.getAttribute("data-id");
   console.log(id);
@@ -33,3 +33,4 @@ function del_click(obj) {
     document.location.replace("/delete/" + id);
   }
 }
+*/

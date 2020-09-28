@@ -16,4 +16,5 @@ block content
       ul
         each vo in todoList
           li(data-id=vo._id)= vo.t_text
-            i.fas.fa-trash-alt.fa-pull-right(onclick="del_click(this)")
+            i.fas.fa-trash-alt.fa-pull-right.btn-delete
+            //- (onclick="del_click(this)")
